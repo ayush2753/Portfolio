@@ -1,0 +1,11 @@
+.Nav{
+  height: 75px;
+  z-index: 100;
+}
+.nav-link{
+  color: white;
+  font-size: 18px;
+}
+.top{
+  background-color: black;
+}

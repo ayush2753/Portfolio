@@ -1,0 +1,154 @@
+
+.headtext{
+    text-align: center;
+    font-style: italic;
+    font-size: 48px;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+  
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    /* margin: 80px; */
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    background-color: azure;
+  }
+  
+  
+  .form-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .textfields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textfields label {
+    margin-bottom: 5px;
+  }
+  
+  .textfields input,
+  .textfields textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: azure;
+  }
+  
+  .textfields input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .textfields input[type="submit"]:hover {
+    background-color: crimson;
+  }
+
+@media screen and (max-width:1200px){
+  .contact-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: 350px;
+    
+  }
+}  
+@media screen and (max-width:992px){
+  
+  .image-container img {
+    max-width: 100%;
+    height: 350px;
+    
+  }
+}  
+
+
+@media screen and (max-width:768px){
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  .image-container img {
+    width: 100%;
+    height: 350px;
+    /* margin-left: 50px; */
+  }
+  .form-container{
+    width: 100%;
+    height: 350px;
+    /* margin-left: 30px; */
+  }
+  .headtext{
+    text-align: center;
+    font-style: italic;
+    font-size: 42px;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+  
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+}
+
+@media screen and (max-width:576px){
+  .image-container img {
+    width: 100%;
+    height: 300px;
+    
+  }
+  .form-container{
+    width: 100%;
+    height: 300px;
+    
+  }
+  .contact-container{
+    width: 100%;
+  }
+  .headtext{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+  
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+}

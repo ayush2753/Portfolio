@@ -1,0 +1,130 @@
+
+.heading{
+  text-align: center;
+  font-size: 48px;
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal
+}
+.timeline{
+  background-color: azure;
+  margin: 0px;
+  padding: 20px;
+  
+}
+
+.outer{
+  border-left: 5px solid black;
+  margin-left: 125px;
+}
+.experience {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  max-width: 1000px;
+  border: 2px solid black;
+  width: 1000px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title
+{
+  color: green;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: azure;
+  border-radius: 1200px;
+  left: -41px;
+  border: 5px solid red;
+}
+.experience:hover{
+  transform: scale(1.1);
+}
+@media screen and (max-width:1200px){
+  .experience {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    max-width: 1000px;
+    border: 2px solid black;
+    width: 800px;
+  }
+  .outer{
+    border-left: 5px solid black;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width:992px){
+  .experience {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    max-width: 1000px;
+    border: 2px solid black;
+    width: 600px;
+  }
+  .outer{
+    border-left: 5px solid black;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width:768px){
+  .experience {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    max-width: 1000px;
+    border: 2px solid black;
+    width: 400px;
+  }
+  .outer{
+    border-left: 5px solid black;
+    margin-left: 75px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .experience {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: whitesmoke;
+    color: black;
+    border-radius: 8px;
+    max-width: 1000px;
+    border: 2px solid black;
+    width: 300px;
+  }
+  .outer{
+    border-left: 5px solid black;
+    margin-left: 0px;
+  }
+  .title{
+    font-size: 20px;
+  }
+}
