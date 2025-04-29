@@ -21,14 +21,17 @@ const Footer = () => {
           <SocialIcon
             url="https://www.instagram.com/ayushsaxena_27/"
             style={{ height: "40px" }}
+            className="social"
           ></SocialIcon>
           <SocialIcon
             url="https://www.linkedin.com/in/ayush-saxena-501b1a27a/"
             style={{ height: "40px" }}
+            className="social"
           ></SocialIcon>
           <SocialIcon
             url="https://github.com/ayush2753"
             style={{ height: "40px" }}
+            className="social"
           ></SocialIcon>
         </div>
       </div>

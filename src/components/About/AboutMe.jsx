@@ -1,39 +1,19 @@
 import React from "react";
 import "./AboutMe.css";
-import image from '../Images/code.png'
-
-// import NavBar from "../Navbar/NavBar";
-
-
+import image from "../Images/code.png";
 
 const AboutMe = () => {
   return (
     <div className="container-fluid">
       <h1 className="about">About Me</h1>
-      <div className="text-section"> 
-       <div className="paragraph">
-            <p className="degree">
-              Hello there! I'm Ayush Saxena, a passionate and ambitious Java Full Stack Developer eager to make a mark in the dynamic
-              world of software development. As a recent graduate with a B.Tech degree in Computer Science,
-              I bring fresh perspectives, a hunger for learning, and a solid foundation in Java technologies.
-            </p>
-            <p className="degree">
-            During my academic journey, I delved deep into Java programming,
-            gaining expertise in both front-end and back-end technologies.
-            From crafting user-friendly interfaces with HTML, CSS, JavaScript, and React to building robust server-side applications with Java. 
-            </p>
-            <p className="degree">
-            I am excited about the prospect of leveraging my skills to contribute meaningfully
-            to real-world projects and am actively seeking opportunities to embark on this journey.
-            </p>
-            
-       </div>
-      <img src={image} alt="ayush" className="boi"/>
-        
-        
+      <div className="text-section">
+        <div className="paragraph">
+          <p className="summary">
+            Dedicated and motivated Java Backend Developer with hands-on experience in building scalable, database-driven applications using Java, Spring Boot, and MySQL. Proficient in REST APIs, backend logic, and relational databases. Also skilled in modern front-end technologies like React and cross-platform mobile development using Flutter. Familiar with version control, deployment tools, and software engineering best practices. Looking to contribute to a growth-focused team in a dynamic tech environment.
+          </p>
+        </div>
+        <img src={image} alt="Ayush coding illustration" className="boi" />
       </div>
-      
-      
     </div>
   );
 };

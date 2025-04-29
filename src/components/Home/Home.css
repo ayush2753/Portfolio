@@ -1,146 +1,200 @@
-.landing{
+.landing {
   display: flex;
   align-items: center;
-  height: calc(100%-75px);
+  height: calc(100vh - 75px); /* Adjust height to take full screen minus header */
   justify-content: space-between;
-}
-.fix
-{
-  width: 800px;
-  height: 800px;
+  padding: 0 40px; /* Added some padding for better spacing on smaller screens */
 }
 
+.fix {
+  width: 1000px;
+  height: 1000px;
+  object-fit: cover; /* Ensure image maintains aspect ratio */
+}
 
-.ayush{
+.ayush {
   font-style: italic;
   font-size: 64px;
   color: green;
 }
 
-.text{
+.text {
   font-size: 28px;
+  margin-top: 20px; /* Add spacing between typewriter and description */
 }
-.description{
+
+.description {
   font-size: 22px;
-  text-align: left;
   text-align: justify;
+  margin-top: 10px;
 }
-.home-page{
+
+.home-page {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  width: 100%;
 }
-.home{
+
+.home {
   margin-left: 25px;
   margin-top: 150px;
 }
 
-@media screen and (max-width:1400px){
-  .fix{
+.social-links {
+  display: flex;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 36px; /* Default icon size */
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+.use {
+  margin-top: 20px;
+}
+
+.resume {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .fix {
     width: 650px;
     height: 650px;
-    
   }
-  .ayush{
+
+  .ayush {
     font-size: 54px;
-  }
-  
-  
-}
-@media screen and (max-width:1200px){
-  .fix{
-    width: 650px;
-    height: 650px;
-    margin-top: 75px;  
-  }
-  .ayush{
-    font-size: 46px;
-  }
-  
-  
-}
-@media screen and (max-width:992px){
-  .fix{
-    width: 500px;
-    height: 500px;
-    margin-top: 125px;
-   
-  }
-  .ayush{
-    font-size: 35px;
-  }
-  .text{
-    font-size: 20px;
-    
-  }
-  .description{
-    font-size: 17px;
-    
-  }
-  
-}
-@media screen and (max-width:768px){
-  .fix{
-    width: 300px;
-    height: 400px;
-    margin-top: 50px;
-    
-    margin-left: 25px ;
-    margin-bottom: 0;
-    
-  }
-  .ayush{
-    font-size: 28px;
-  }
-  .text{
-    font-size: 18px;
-    
-  }
-  .description{
-    font-size: 14px;
-    width: 315px;
-  }
-  .home{
-      margin-left: 15px;
-      margin-top: 75px;
-      
   }
 }
 
-@media screen and (max-width:576px){
-  .fix{
+@media screen and (max-width: 1200px) {
+  .fix {
+    width: 650px;
+    height: 650px;
+    margin-top: 75px;
+  }
+
+  .ayush {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .fix {
+    width: 500px;
+    height: 500px;
+    margin-top: 125px;
+  }
+
+  .ayush {
+    font-size: 35px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fix {
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+
+  .ayush {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+    width: 315px;
+  }
+
+  .home {
+    margin-left: 15px;
+    margin-top: 75px;
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack icons vertically */
+    gap: 15px; /* Space between stacked icons */
+  }
+
+  .social-icon {
+    font-size: 30px; /* Adjust icon size for small screens */
+    margin-bottom: 10px; /* Space between icons */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .fix {
     width: 300px;
     height: 350px;
     margin: auto;
   }
-  .ayush{
+
+  .ayush {
     font-size: 20px;
     font-weight: bold;
   }
-  .text{
+
+  .text {
     font-size: 14px;
-   
   }
-  .description{
+
+  .description {
     font-size: 14px;
     width: 100%;
   }
-  .home{
-    margin-top: 25px;  
+
+  .home {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .home-page {
     display: flex;
     flex-direction: column;
   }
-  .home-page{
-    display: flex;
-    flex-direction: column;
-  }
-  .use{
+
+  .use {
     width: 115px;
-    
-    
+    margin-top: 15px; /* Add space between button and icons */
   }
-  .resume{
+
+  .resume {
     font-size: 14px;
   }
-  
 
+  .social-links {
+    gap: 12px; /* Adjust gap between icons */
+  }
+
+  .social-icon {
+    font-size: 28px; /* Smaller icons for tiny screens */
+    margin-bottom: 8px; /* Adjust space between icons */
+  }
 }

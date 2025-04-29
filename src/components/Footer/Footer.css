@@ -18,3 +18,25 @@
 .emoji{
   height: 30px;
 }
+@media screen and (max-width:572px){
+  .footer{
+    height: 50px;
+    justify-content: space-between;
+    
+  }
+  .creation{
+    font-size: 8px;
+    margin: 0;
+    padding-top: 15px;
+  }
+  .emoji{
+    height: 15px;
+  }
+  .social{
+    height: 5px;
+  }
+  .icons{
+    margin-top: 5px;
+    
+  }
+}
