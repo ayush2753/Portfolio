@@ -162,7 +162,7 @@
   }
 
   .ayush {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
   }
 
@@ -176,7 +176,7 @@
   }
 
   .home {
-    margin-top: 25px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: left; /* Center text on smaller screens */
