@@ -161,6 +161,12 @@
     margin: auto;
   }
 
+  .dark-mode .fix {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+  }
+
   .ayush {
     font-size: 24px;
     font-weight: bold;
