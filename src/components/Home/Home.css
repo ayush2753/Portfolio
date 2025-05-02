@@ -182,6 +182,13 @@
     text-align: left; /* Center text on smaller screens */
   }
 
+  .dark-mode .home{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
   .home-page {
     display: flex;
     flex-direction: column;
