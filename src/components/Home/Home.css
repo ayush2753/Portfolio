@@ -7,8 +7,8 @@
 }
 
 .fix {
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   object-fit: cover; /* Ensure image maintains aspect ratio */
   margin-top: 50px;
   margin-left: 50px;
@@ -44,7 +44,7 @@
 
 .home {
   margin-left: 25px;
-  margin-top: 250px;
+  margin-top: 225px;
 }
 
 .social-links {
