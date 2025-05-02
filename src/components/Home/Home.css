@@ -7,8 +7,8 @@
 }
 
 .fix {
-  width: 1000px;
-  height: 1000px;
+  width: 600px;
+  height: 600px;
   object-fit: cover; /* Ensure image maintains aspect ratio */
   margin-top: 50px;
   margin-left: 50px;
@@ -16,7 +16,7 @@
 
 .ayush {
   font-style: italic;
-  font-size: 64px;
+  font-size: 60px;
   color: green;
 }
 .dark-mode .ayush {
@@ -44,7 +44,7 @@
 
 .home {
   margin-left: 25px;
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 .social-links {
