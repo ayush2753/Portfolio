@@ -1,11 +1,55 @@
-.Nav{
+/* Default (Light Mode) Navbar */
+.Nav {
   height: 75px;
   z-index: 100;
+  background-color: black;
 }
-.nav-link{
+
+.nav-link {
   color: white;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
-.top{
-  background-color: black;
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar-collapse {
+  background-color: black; /* Fix for mobile toggler bg */
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+/* DARK MODE STYLES */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .Nav {
+  background-color: #0a192f;
+}
+
+.dark-mode .navbar {
+  background-color: #0a192f !important;
+}
+
+.dark-mode .navbar-collapse {
+  background-color: #0a192f !important; /* Fix for mobile toggler bg */
+}
+
+.dark-mode .nav-link,
+.dark-mode a {
+  color: #ffffff !important;
+}
+
+.dark-mode .nav-link:hover {
+  color: #00ff00 !important;
 }

@@ -17,6 +17,11 @@
   font-size: 64px;
   color: green;
 }
+.dark-mode .ayush {
+  font-style: italic;
+  font-size: 54px;
+  color: #00ff00;
+}
 
 .text {
   font-size: 28px;
@@ -172,7 +177,7 @@
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    text-align: center; /* Center text on smaller screens */
+    text-align: left; /* Center text on smaller screens */
   }
 
   .home-page {
@@ -190,7 +195,8 @@
   }
 
   .social-links {
-    gap: 12px; /* Adjust gap between icons */
+    display: flex !important;
+    flex-direction: row;
   }
 
   .social-icon {

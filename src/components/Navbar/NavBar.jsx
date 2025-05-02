@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
 import "./NavBar.css";
 
-
 export default function NavBar() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  };
+
   return (
     <nav className="Nav navbar navbar-expand-lg navbar-dark bg-dark">
-       
-      <div className="top container-fluid">
+      <div className="container-fluid top">
         <Link className="navbar-brand" to="/">
           <img
             src={logo}
@@ -27,9 +36,9 @@ export default function NavBar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
@@ -44,15 +53,27 @@ export default function NavBar() {
             <li className="nav-item">
               <Link className="nav-link" to="/Experience">Experience</Link>
             </li>
-            
             <li className="nav-item">
               <Link className="nav-link" to="/Projects">Projects</Link>
             </li>
-            
             <li className="nav-item">
               <Link className="nav-link" to="/Reachme">Reach Me</Link>
             </li>
           </ul>
+
+          {/* Toggle Switch for Dark/Light Mode */}
+          <div className="form-check form-switch text-light">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="themeSwitch"
+              onChange={toggleDarkMode}
+              checked={darkMode}
+            />
+            <label className="form-check-label" htmlFor="themeSwitch">
+              {darkMode ? "Dark" : "Light"}
+            </label>
+          </div>
         </div>
       </div>
     </nav>

@@ -3,6 +3,15 @@ import "./Experience.css";
 
 const experiences = [
   {
+    company: "Argro Tech Solution (Freelance)",
+    duration: "Nov 2024 - April 2025 (Ongoing)",
+    details: [
+      "Collaborating remotely as a freelance Flutter developer for smart utility solutions.",
+      "Contributed to live cross-platform projects, ensuring responsive design and seamless performance across Android and iOS.",
+      "Participated in agile development cycles, regularly integrating client feedback to refine app features."
+    ]
+  },  
+  {
     company: "Softserv Solutions Pvt Ltd, Jaipur",
     duration: "May 2024 - July 2024",
     details: [
@@ -22,25 +31,22 @@ const experiences = [
 ];
 
 const ExperienceCard = ({ company, duration, details }) => (
-  <div className="experience card">
+  <div className="experience">
     <div className="info">
       <h3 className="title">{company}</h3>
       <p className="duration">{duration}</p>
-      <p>
+      <ul className="details-list">
         {details.map((line, index) => (
-          <span key={index}>
-            ● {line}
-            <br />
-          </span>
+          <li key={index}>{line}</li>
         ))}
-      </p>
+      </ul>
     </div>
   </div>
 );
 
 const Experience = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid experience-section">
       <div className="timeline">
         <h1 className="heading">Experience</h1>
         <div className="outer">

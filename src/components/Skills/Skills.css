@@ -9,6 +9,42 @@
   background: azure;
   }
 
+  /* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Default text to white */
+}
+
+body.dark-mode .skills {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+body.dark-mode .skills-header {
+  color: #ffffff;
+}
+
+body.dark-mode .skills-container {
+  color: #ffffff;
+}
+
+body.dark-mode .language {
+  color: #dddddd; /* Slightly softer white */
+}
+
+body.dark-mode .skills-title h3 {
+  color: #dddddd;
+}
+
+body.dark-mode .skills-img {
+  background-color: #333333; /* Darker background for icons */
+}
+
+body.dark-mode .skills-img::after {
+  background: #555555; /* Softer dark shade for half-circle */
+}
+
+
   .skills{
     text-align: center;
     font-style: italic;
@@ -25,6 +61,7 @@
     font-style: normal
     
   }
+
   .skills-section{
   padding-top: 20px;
   }

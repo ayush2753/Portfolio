@@ -1,27 +1,26 @@
-
-.heading{
+.heading {
   text-align: center;
   font-size: 48px;
   text-decoration: underline;
   color: black;
   margin-bottom: 25px;
   margin-left: 35px;
-  
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
 }
-.timeline{
+
+.timeline {
   background-color: azure;
   margin: 0px;
   padding: 20px;
-  
 }
 
-.outer{
+.outer {
   border-left: 5px solid black;
   margin-left: 75px;
 }
+
 .experience {
   position: relative;
   margin: 0 0 20px 20px;
@@ -32,17 +31,29 @@
   max-width: 1000px;
   border: 2px solid black;
   width: 1000px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.details-list {
+  padding-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
 .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.title
-{
+
+.title {
   color: green;
   position: relative;
 }
+
 .title::before {
   content: "";
   position: absolute;
@@ -53,78 +64,74 @@
   left: -41px;
   border: 5px solid red;
 }
-.experience:hover{
+
+.experience:hover {
   transform: scale(1.1);
 }
-@media screen and (max-width:1200px){
+
+@media screen and (max-width:1200px) {
   .experience {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: whitesmoke;
-    color: black;
-    border-radius: 8px;
-    max-width: 1000px;
-    border: 2px solid black;
     width: 800px;
   }
-  .outer{
-    border-left: 5px solid black;
+  .outer {
     margin-left: 50px;
   }
 }
-@media screen and (max-width:992px){
+
+@media screen and (max-width:992px) {
   .experience {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: whitesmoke;
-    color: black;
-    border-radius: 8px;
-    max-width: 1000px;
-    border: 2px solid black;
     width: 600px;
   }
-  .outer{
-    border-left: 5px solid black;
+  .outer {
     margin-left: 100px;
   }
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
   .experience {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: whitesmoke;
-    color: black;
-    border-radius: 8px;
-    max-width: 1000px;
-    border: 2px solid black;
     width: 400px;
   }
-  .outer{
-    border-left: 5px solid black;
+  .outer {
     margin-left: 75px;
   }
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
   .experience {
-    position: relative;
-    margin: 0 0 20px 20px;
-    padding: 10px;
-    background: whitesmoke;
-    color: black;
-    border-radius: 8px;
-    max-width: 1000px;
-    border: 2px solid black;
     width: 300px;
   }
-  .outer{
-    border-left: 5px solid black;
+  .outer {
     margin-left: 0px;
   }
-  .title{
+  .title {
     font-size: 20px;
   }
+}
+
+/* DARK MODE — consistent with .dark-mode class like projects section */
+.dark-mode .heading {
+  color: white;
+}
+
+.dark-mode .timeline {
+  background-color: #0a192f;
+}
+
+.dark-mode .outer {
+  border-left: 5px solid white;
+}
+
+.dark-mode .experience {
+  background-color: #112240;
+  color: white;
+  border: 2px solid white;
+}
+
+.dark-mode .title {
+  color: #00ff00;
+}
+
+.dark-mode .title::before {
+  background-color: #0a192f;
+  border: 5px solid #ff4444;
 }

@@ -1,4 +1,10 @@
-.main{
+.main {
   background-color: azure;
-  overflow:hidden;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+/* Dark mode for main container */
+.dark-mode .main {
+  background-color: #0d1b2a; /* same dark blue you are using for body */
 }

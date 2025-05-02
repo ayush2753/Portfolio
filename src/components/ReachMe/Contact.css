@@ -14,6 +14,10 @@
     font-weight: 400;
     font-style: normal
 }
+
+ .dark-mode .headtext{
+  color: white;
+}
 .contact-container {
     display: flex;
     justify-content: center;
@@ -131,7 +135,7 @@
   .form-container{
     width: 100%;
     height: 300px;
-    
+    margin-bottom:  15rem;
   }
   .contact-container{
     width: 100%;

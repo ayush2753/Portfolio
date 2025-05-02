@@ -9,6 +9,9 @@
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
 }
+.dark-mode .about{
+  color: white;
+}
 
 /* Summary Paragraph */
 .summary {
@@ -18,7 +21,9 @@
   margin-bottom: 1rem;
   text-align: justify;
 }
-
+.dark-mode .summary{
+  color: white;
+}
 /* Container for image and paragraph */
 .text-section {
   display: flex;

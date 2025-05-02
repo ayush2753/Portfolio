@@ -8,7 +8,9 @@
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
 }
-
+.dark-mode .mywork{
+  color: white;
+}
 /* Grid layout with minimum 3 per row */
 .kaam {
   display: grid;

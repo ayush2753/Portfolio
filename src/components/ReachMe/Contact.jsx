@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="containerreach">
       <h1 className="headtext">Reach Me</h1>
       <div className="contact-container">
         <div className="image-container">
