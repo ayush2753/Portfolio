@@ -10,6 +10,8 @@
   width: 1000px;
   height: 1000px;
   object-fit: cover; /* Ensure image maintains aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .ayush {
@@ -42,7 +44,7 @@
 
 .home {
   margin-left: 25px;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .social-links {
